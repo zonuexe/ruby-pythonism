@@ -1,0 +1,1 @@
+require 'pythonism/methods/kernel'
