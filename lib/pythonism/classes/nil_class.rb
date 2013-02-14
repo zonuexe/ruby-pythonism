@@ -6,7 +6,7 @@ class NilClass
   include Pythonism::Pythonize::Basic
 
   # @return [String]
-  def inspect;   'False'; end
+  def inspect;   'None'; end
 
   # @return [FalseClass]
   def __nonzero__; false; end
