@@ -1,7 +1,7 @@
 require 'pythonism/version'
 require 'pythonism/pythonize'
 require 'pythonism/classes'
-require 'pythonism/methods'
+require 'pythonism/functions'
 
 # Namespace for Pythonism
 module Pythonism
