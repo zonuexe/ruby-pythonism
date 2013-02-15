@@ -1,10 +1,5 @@
 # Define Kernel methods
 module ::Kernel
-  # @return [Object]
-  def this
-    self
-  end
-
   # @param [Object] obj
   # @return [Boolean]
   def bool (obj)
@@ -13,20 +8,41 @@ module ::Kernel
 
   # @param [Object] obj
   # @return [Class]
-  def type (obj)
-    obj.__class__
+  def type (*obj)
+    case obj.size
+    when 0
+      Class
+    when 1
+      obj[0].__class__
+    else
+      raise ArgumentError
+    end
   end
 
   # @param [Object] obj
   # @return [Array]
-  def list (obj)
-    obj.to_a
+  def list (*obj)
+    case obj.size
+    when 0
+      Array
+    when 1
+      obj[0].to_a
+    else
+      raise ArgumentError
+    end
   end
 
   # @param [Object] obj
   # @return [Fixnum,Bignum]
-  def int (obj)
-    obj.__int__
+  def int (*obj)
+    case obj.size
+    when 0
+      Fixnum
+    when 1
+      obj[0].__int__
+    else
+      raise ArgumentError
+    end
   end
 
   # @param [Object] obj

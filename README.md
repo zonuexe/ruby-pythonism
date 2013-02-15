@@ -7,7 +7,8 @@ Requirement
 -----------
 
  * **Ruby** 1.9+
- * **Knowledge** of Python
+ * Knowledge of **Python**
+ * *Zen of Python*
 
 Installation
 ------------

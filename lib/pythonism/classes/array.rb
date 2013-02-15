@@ -1,5 +1,5 @@
-# Pythonized +String+ class
-class String
+# Pythonized +Array+ class
+class Array
   include Pythonism::Pythonize::Basic
 
   # @return [Boolean]
@@ -10,6 +10,11 @@ class String
   # @return [Array]
   def to_a
     self
+  end
+
+  # @return [String]
+  def to_s
+    "[#{self.join(', ')}]"
   end
 
   # @return [String]
