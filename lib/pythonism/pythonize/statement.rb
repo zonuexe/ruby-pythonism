@@ -2,7 +2,7 @@
 module Pythonism::Pythonize::Statement
   # method of imitation +import+ statement
   # @return [Boolean]
-  def import (obj)
+  def import(obj)
     case obj
     when :this
       puts Pythonism::ZEN_OF_PYTHON
@@ -15,7 +15,7 @@ module Pythonism::Pythonize::Statement
   # special keyword for Zen
   # @return [Symbol]
   def this
-    case self.inspect
+    case inspect
     when 'main'
       :this
     else

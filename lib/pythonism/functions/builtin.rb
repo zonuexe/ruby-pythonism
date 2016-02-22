@@ -3,7 +3,7 @@
 module Pythonism::Functions::Builtin
   # @param [Object] obj
   # @return [Boolean,Method]
-  def bool (*obj)
+  def bool(*obj)
     case obj.size
     when 0
       method(:bool)
@@ -16,7 +16,7 @@ module Pythonism::Functions::Builtin
 
   # @param [Object] obj
   # @return [Class]
-  def type (*obj)
+  def type(*obj)
     case obj.size
     when 0
       Class
@@ -29,7 +29,7 @@ module Pythonism::Functions::Builtin
 
   # @param [Object] obj
   # @return [Array,Class]
-  def list (*obj)
+  def list(*obj)
     case obj.size
     when 0
       Array
@@ -42,7 +42,7 @@ module Pythonism::Functions::Builtin
 
   # @param [Object] obj
   # @return [Fixnum,Bignum,Class]
-  def int (*obj)
+  def int(*obj)
     case obj.size
     when 0
       Fixnum
@@ -55,7 +55,7 @@ module Pythonism::Functions::Builtin
 
   # @param [Object] obj
   # @return [Fixnum,Bignum,Class]
-  def long (*obj)
+  def long(*obj)
     case obj.size
     when 0
       Bignum
@@ -68,7 +68,7 @@ module Pythonism::Functions::Builtin
 
   # @param [Object] obj
   # @return [Float,Class]
-  def float (*obj)
+  def float(*obj)
     case obj.size
     when 0
       Float
@@ -81,7 +81,7 @@ module Pythonism::Functions::Builtin
 
   # @param [Object] obj
   # @return [String,Class]
-  def str (*obj)
+  def str(*obj)
     case obj.size
     when 0
       String
@@ -92,7 +92,7 @@ module Pythonism::Functions::Builtin
 
   # @param [Object] obj
   # @return [String,Class]
-  def hex (*obj)
+  def hex(*obj)
     case obj.size
     when 0
       method(:hex)
@@ -105,7 +105,7 @@ module Pythonism::Functions::Builtin
 
   # @param [Object] obj
   # @return [String,Class]
-  def oct (*obj)
+  def oct(*obj)
     case obj.size
     when 0
       method(:oct)
