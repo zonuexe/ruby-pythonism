@@ -1,10 +1,7 @@
-require 'pythonism/version'
-require 'pythonism/pythonize'
-require 'pythonism/classes'
-require 'pythonism/functions'
-
 # Namespace for Pythonism
 module Pythonism
+  autoload :VERSION, 'pythonism/version'
+
   # Zen of Python
   # @author Tim Peters
   # @see http://www.python.org/dev/peps/pep-0020/
@@ -33,3 +30,7 @@ If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
   EOT
 end
+
+require 'pythonism/pythonize'
+require 'pythonism/classes'
+require 'pythonism/functions'
