@@ -8,14 +8,16 @@ class String
 
   # @return [Boolean]
   def __nonzero__
-    self.size != 0
+    size != 0
   end
 
   # @return [Array]
   def to_a
-    self.each_char.to_a
+    each_char.to_a
   end
 
   # @return [String]
-  def self.to_s; 'str'; end
+  def self.to_s
+    'str'
+  end
 end

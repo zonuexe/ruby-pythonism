@@ -4,7 +4,7 @@ class Array
 
   # @return [Boolean]
   def __nonzero__
-    self.size != 0
+    size != 0
   end
 
   # @return [Array]
@@ -14,9 +14,11 @@ class Array
 
   # @return [String]
   def to_s
-    "[#{self.join(', ')}]"
+    "[#{join(', ')}]"
   end
 
   # @return [String]
-  def self.to_s; 'list'; end
+  def self.to_s
+    'list'
+  end
 end
