@@ -1,4 +1,10 @@
 Style/ClassAndModuleChildren:
   Enabled: false
+Style/ConstantName:
+  Enabled: false
+Style/MutableConstant:
+  Enabled: false
+Style/TrailingCommaInLiteral:
+  Enabled: false
 Style/ZeroLengthPredicate:
   Enabled: false
