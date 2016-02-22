@@ -19,7 +19,7 @@ But, we have not a plan of perfect python emulation in the future either.
 
 I say honestly, but this is a joke gem.
 EOT
-  gem.homepage      = "http://dt.zonu.me/"
+  gem.homepage      = 'http://tadsan.github.io/'
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
