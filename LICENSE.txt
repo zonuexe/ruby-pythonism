@@ -1,4 +1,4 @@
-Copyright (c) 2013 USAMI Kenta
+Copyright (c) 2016 USAMI Kenta
 
 MIT License
 
